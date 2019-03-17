@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>Example - {{title}}</title>
+	{% else %}
+		<title>Example - no name</title>
+	{% endif %}
+	<!-- add css link here -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+	{% block content %}{% endblock %}
+	<!-- add javascript link here -->
+	<script type="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+	</script>
+</body>
+</html>

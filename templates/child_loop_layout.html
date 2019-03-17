@@ -1,0 +1,8 @@
+{% extends "parent_layout.html"%}
+{% block content%}
+	{% for info in info%}
+		<h1>{{info.title}}</h1>
+		<p>By {{info.author}} on {{info.date}}</p>
+		<p>{{info.content}}</p>
+	{% endfor %}
+{% endblock content%}

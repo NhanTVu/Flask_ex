@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>Example - {{title}}</title>
+	{% else %}
+		<title>Example - no name</title>
+	{% endif %}
+</head>
+<body>
+	{% for info in info%}
+		<h1>{{info.title}}</h1>
+		<p>By {{info.author}} on {{info.date}}</p>
+		<p>{{info.content}}</p>
+	{% endfor %}
+</body>
+</html>

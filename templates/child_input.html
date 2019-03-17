@@ -1,0 +1,23 @@
+{% extends "parent_layout.html"%}
+{% block content%}
+
+	 <!-- semantic ui text input -->
+	<form class="ui form" method="POST" action = "/input">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" name="first_name" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" name="last_name" placeholder="Last Name">
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input type="checkbox" name = 'acceptance' >
+            <label>I agree to have my name shown to me</label>
+          </div>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+
+{% endblock content%}
